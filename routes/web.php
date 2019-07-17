@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'PagesController@root')->name('root');
+Route::redirect('/', '/products')->name('root');
+Route::get('products', 'ProductsController@index')->name('products.index');
 
 
 // auth 中间件代表需要登录，verified中间件代表需要经过邮箱验证
