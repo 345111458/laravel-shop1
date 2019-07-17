@@ -19,6 +19,7 @@ class UserAddress extends Model
         'last_used_at',
     ];
 
+
     protected $datas = ['last_used_at'];
 
     public function user(){
