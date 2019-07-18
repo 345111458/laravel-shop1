@@ -22,6 +22,11 @@ class Product extends Model
         return $this->hasMany(ProductSku::class);
     }
 
+    public function UserFavoriteProducts(){
+
+        return $this->hasMany(UserFavoriteProducts::class);
+    }
+
 
     // 图片 访问器
     public function getImageUrlAttribute(){

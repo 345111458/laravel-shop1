@@ -45,6 +45,7 @@
                                     </div>
                                     <div class="bottom">
                                         <div class="sold_count">销量 <span>{{ $product->sold_count }}笔</span></div>
+                                        <div class="sold_count">收藏 <span>{{ $product->UserFavoriteProducts->count() }}</span></div>
                                         <div class="review_count">评价 <span>{{ $product->review_count }}</span></div>
                                     </div>
                                 </div>
